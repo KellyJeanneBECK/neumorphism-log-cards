@@ -7,6 +7,15 @@
     -5px -5px 10px #ffffff;
 }
 
+.cardtitle {
+  font-family: "Changa", sans-serif;
+  font-weight: 600;
+  margin: 12px;
+  padding: 0 1rem;
+  border-radius: 25px;
+  text-align: center;
+}
+
 .logform {
   margin: 12px;
   padding: 1rem 2rem;

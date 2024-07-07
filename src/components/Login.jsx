@@ -3,7 +3,7 @@ import styles from "./Cards.module.css";
 function Login() {
   return (
     <article className={styles.logcard}>
-      <h2 tabIndex="0">
+      <h2 tabIndex="0" className={styles.cardtitle}>
         <span>&#11206;</span> Login
       </h2>
       <form className={styles.logform}>

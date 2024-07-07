@@ -1,0 +1,15 @@
+main {
+  width: 100vw;
+  min-height: 100vh;
+  padding: 2rem 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+}
+
+.title {
+  font-family: "Courgette", cursive;
+  width: 90vw;
+  margin-bottom: 1rem;
+}
