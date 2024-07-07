@@ -19,6 +19,9 @@ body {
   color: var(--secondary-color);
   font-family: "Biryani", sans-serif;
   font-weight: 300;
+  display: flex;
+  justify-content: center;
+  overflow-x: hidden;
 }
 
 :focus {

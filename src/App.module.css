@@ -5,11 +5,29 @@ main {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 2rem;
+  gap: 3rem;
 }
 
 .title {
   font-family: "Courgette", cursive;
-  width: 90vw;
+  width: 11ch;
   margin-bottom: 1rem;
+  text-align: center;
+}
+
+@media screen and (min-width: 1024px) {
+  main {
+    padding: 2rem 0;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: start;
+    justify-items: center;
+    gap: 0;
+  }
+
+  .title {
+    grid-column-start: 1;
+    grid-column-end: -1;
+    margin-bottom: 4rem;
+  }
 }
