@@ -1,0 +1,116 @@
+.logcard {
+  width: 90vw;
+  border-radius: 25px;
+  background-color: var(--card-color);
+  box-shadow:
+    5px 5px 10px var(--shadow-color),
+    -5px -5px 10px #ffffff;
+  display: grid;
+  transition: grid-template-rows 0.5s ease-in-out;
+}
+
+.showcard {
+  grid-template-rows: auto 1fr;
+}
+
+.hiddencard {
+  grid-template-rows: auto 0fr;
+}
+
+.cardtitle {
+  border: none;
+  background-color: transparent;
+  width: calc(100% - 24px);
+  font-family: "Changa", sans-serif;
+  font-weight: 600;
+  font-size: 1.5rem;
+  margin: 12px;
+  border-radius: 25px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  gap: 0.5rem;
+}
+
+.arrow {
+  display: block;
+  transition: all 0.5s ease-out;
+}
+
+.rotate {
+  transform: rotate(0.5turn);
+}
+
+.logform {
+  align-items: start;
+  margin: 12px;
+  gap: 0.5rem;
+  background-color: var(--primary-color);
+  border-radius: 20px;
+  box-shadow:
+    inset 5px 5px 10px var(--shadow-color),
+    inset -5px -5px 10px #ffffff;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  transition: padding 0.5s ease-out;
+}
+
+.showform {
+  padding: 1.5rem 2rem;
+}
+
+.hiddenform {
+  padding: 0 2rem;
+}
+
+label {
+  padding: 0 1rem;
+}
+
+input {
+  width: 100%;
+  font-family: "Biryani", sans-serif;
+  font-weight: 200;
+  margin-bottom: 2rem;
+  border: none;
+  border-radius: 12px;
+  padding: 0.5rem 1rem;
+  background-color: var(--primary-color);
+  box-shadow:
+    inset 3px 3px 6px var(--shadow-color),
+    inset -3px -3px 6px #ffffff;
+  background: linear-gradient(145deg, var(--primary-color), var(--light-color));
+}
+
+.logbtn {
+  cursor: pointer;
+  font-family: "Biryani", sans-serif;
+  font-weight: 700;
+  font-size: 1rem;
+  border: none;
+  border-radius: 25px;
+  width: fit-content;
+  margin: auto;
+  padding: 0.5rem 2rem 0.25rem 2rem;
+  background-color: var(--card-color);
+  box-shadow:
+    3px 3px 6px var(--shadow-color),
+    -3px -3px 6px #ffffff;
+}
+
+.logbtn:hover {
+  background: linear-gradient(145deg, var(--card-color), var(--light-color));
+}
+
+@media screen and (min-width: 768px) {
+  .logcard {
+    width: 75vw;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .logcard {
+    width: 40vw;
+  }
+}

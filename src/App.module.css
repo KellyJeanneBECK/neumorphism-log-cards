@@ -1,0 +1,34 @@
+main {
+  width: 100vw;
+  min-height: 100vh;
+  padding: 2rem 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 3rem;
+}
+
+.title {
+  font-family: "Courgette", cursive;
+  width: 11ch;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+@media screen and (min-width: 1024px) {
+  main {
+    padding: 2rem 0;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 12rem auto;
+    align-items: start;
+    justify-items: center;
+    gap: 0;
+  }
+
+  .title {
+    grid-column-start: 1;
+    grid-column-end: -1;
+    margin-bottom: 4rem;
+  }
+}
