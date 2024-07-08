@@ -29,6 +29,7 @@ function Login() {
           id="email"
           name="email"
           type="email"
+          placeholder="Type email here"
         />
 
         <label htmlFor="password">Password</label>
@@ -37,6 +38,7 @@ function Login() {
           id="password"
           name="password"
           type="password"
+          placeholder="Type password here"
         />
 
         <button

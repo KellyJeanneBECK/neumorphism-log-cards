@@ -29,6 +29,7 @@ function Signup() {
           id="pseudo"
           name="pseudo"
           type="text"
+          placeholder="Type pseudo here"
         />
 
         <label htmlFor="email">Email</label>
@@ -37,6 +38,7 @@ function Signup() {
           id="email"
           name="email"
           type="email"
+          placeholder="Type email here"
         />
 
         <label htmlFor="password">Password</label>
@@ -45,6 +47,7 @@ function Signup() {
           id="password"
           name="password"
           type="password"
+          placeholder="Type password here"
         />
 
         <label htmlFor="password">Confirm password</label>
@@ -53,6 +56,7 @@ function Signup() {
           id="confirm_password"
           name="confirm_password"
           type="password"
+          placeholder="Re-type password here"
         />
 
         <button
