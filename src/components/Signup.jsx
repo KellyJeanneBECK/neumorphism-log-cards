@@ -20,9 +20,7 @@ function Signup() {
       <form
         className={`${styles.logform} ${showSign ? styles.showform : styles.hiddenform}`}
       >
-        <label tabIndex={showSign ? "0" : "-1"} htmlFor="pseudo">
-          Pseudo
-        </label>
+        <label htmlFor="pseudo">Pseudo</label>
         <input
           tabIndex={showSign ? "0" : "-1"}
           id="pseudo"
@@ -30,9 +28,7 @@ function Signup() {
           type="text"
         />
 
-        <label tabIndex={showSign ? "0" : "-1"} htmlFor="email">
-          Email
-        </label>
+        <label htmlFor="email">Email</label>
         <input
           tabIndex={showSign ? "0" : "-1"}
           id="email"
@@ -40,9 +36,7 @@ function Signup() {
           type="email"
         />
 
-        <label tabIndex={showSign ? "0" : "-1"} htmlFor="password">
-          Password
-        </label>
+        <label htmlFor="password">Password</label>
         <input
           tabIndex={showSign ? "0" : "-1"}
           id="password"
@@ -50,9 +44,7 @@ function Signup() {
           type="password"
         />
 
-        <label tabIndex={showSign ? "0" : "-1"} htmlFor="password">
-          Confirm password
-        </label>
+        <label htmlFor="password">Confirm password</label>
         <input
           tabIndex={showSign ? "0" : "-1"}
           id="confirm_password"

@@ -20,9 +20,7 @@ function Login() {
       <form
         className={`${styles.logform} ${showLog ? styles.showform : styles.hiddenform}`}
       >
-        <label tabIndex={showLog ? "0" : "-1"} htmlFor="email">
-          Email
-        </label>
+        <label htmlFor="email">Email</label>
         <input
           tabIndex={showLog ? "0" : "-1"}
           id="email"
@@ -30,9 +28,7 @@ function Login() {
           type="email"
         />
 
-        <label tabIndex={showLog ? "0" : "-1"} htmlFor="password">
-          Password
-        </label>
+        <label htmlFor="password">Password</label>
         <input
           tabIndex={showLog ? "0" : "-1"}
           id="password"

@@ -52,12 +52,6 @@
   padding: 0 2rem;
 }
 
-label,
-input,
-.logbtn {
-  overflow: hidden;
-}
-
 label {
   padding: 0 1rem;
 }
