@@ -14,7 +14,10 @@ function Signup() {
     >
       <h2 onClick={toggleSign}>
         <button className={styles.cardtitle}>
-          <span>&#11206;</span> Sign Up
+          <span className={`${styles.arrow} ${showSign ? styles.rotate : ""}`}>
+            &#11206;
+          </span>{" "}
+          Sign Up
         </button>
       </h2>
       <form

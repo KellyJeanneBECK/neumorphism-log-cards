@@ -14,7 +14,10 @@ function Login() {
     >
       <h2 onClick={toggleLog}>
         <button className={styles.cardtitle}>
-          <span>&#11206;</span> Sign Up
+          <span className={`${styles.arrow} ${showLog ? styles.rotate : ""}`}>
+            &#11206;
+          </span>{" "}
+          Login
         </button>
       </h2>
       <form
