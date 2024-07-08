@@ -1,12 +1,23 @@
 import styles from "./Cards.module.css";
+import { useState } from "react";
 
 function Login() {
+  const [showLog, setShowLog] = useState(false);
+
+  const toggleLog = () => {
+    setShowLog(!showLog);
+  };
+
   return (
-    <article className={styles.logcard}>
-      <h2 tabIndex="0" className={styles.cardtitle}>
+    <article
+      className={`${styles.logcard} ${showLog ? styles.showcard : styles.hiddencard}`}
+    >
+      <h2 tabIndex="0" className={styles.cardtitle} onClick={toggleLog}>
         <span>&#11206;</span> Login
       </h2>
-      <form className={styles.logform}>
+      <form
+        className={`${styles.logform} ${showLog ? styles.showform : styles.hiddenform}`}
+      >
         <label htmlFor="email">Email</label>
         <input id="email" name="email" type="email" />
 
