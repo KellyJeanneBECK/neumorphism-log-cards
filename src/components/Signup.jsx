@@ -1,12 +1,23 @@
 import styles from "./Cards.module.css";
+import { useState } from "react";
 
 function Signup() {
+  const [showSign, setShowSign] = useState(false);
+
+  const toggleSign = () => {
+    setShowSign(!showSign);
+  };
+
   return (
-    <article className={styles.logcard}>
-      <h2 tabIndex="0" className={styles.cardtitle}>
+    <article
+      className={`${styles.logcard} ${showSign ? styles.showcard : styles.hiddencard}`}
+    >
+      <h2 tabIndex="0" className={styles.cardtitle} onClick={toggleSign}>
         <span>&#11206;</span> Sign Up
       </h2>
-      <form className={styles.logform}>
+      <form
+        className={`${styles.logform} ${showSign ? styles.showform : styles.hiddenform}`}
+      >
         <label htmlFor="pseudo">Pseudo</label>
         <input id="pseudo" name="pseudo" type="text" />
 

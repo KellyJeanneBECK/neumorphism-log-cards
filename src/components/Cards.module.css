@@ -6,7 +6,7 @@
     5px 5px 10px var(--shadow-color),
     -5px -5px 10px #ffffff;
   display: grid;
-  transition: grid-template-rows 1s ease-in-out;
+  transition: grid-template-rows 0.5s ease-in-out;
 }
 
 .showcard {
@@ -28,6 +28,7 @@
 }
 
 .logform {
+  align-items: start;
   margin: 12px;
   gap: 0.5rem;
   background-color: var(--primary-color);
@@ -35,13 +36,14 @@
   box-shadow:
     inset 5px 5px 10px var(--shadow-color),
     inset -5px -5px 10px #ffffff;
-  display: grid;
+  display: flex;
+  flex-direction: column;
   overflow: hidden;
-  transition: padding 1s ease-out;
+  transition: padding 0.5s ease-out;
 }
 
 .showform {
-  padding: 1rem 2rem;
+  padding: 1.5rem 2rem;
 }
 
 .hiddenform {
@@ -59,9 +61,10 @@ label {
 }
 
 input {
+  width: 100%;
   font-family: "Biryani", sans-serif;
   font-weight: 200;
-  margin-bottom: 1.5rem;
+  margin-bottom: 2rem;
   border: none;
   border-radius: 12px;
   padding: 0.5rem 1rem;
@@ -75,7 +78,8 @@ input {
 .logbtn {
   cursor: pointer;
   font-family: "Biryani", sans-serif;
-  font-weight: 600;
+  font-weight: 700;
+  font-size: 1rem;
   border: none;
   border-radius: 25px;
   width: fit-content;
